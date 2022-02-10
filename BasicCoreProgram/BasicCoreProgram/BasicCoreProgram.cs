@@ -8,28 +8,20 @@ namespace BasicCoreProgram
 {
     internal class BasicCoreProgram
     {
-         public void  LargestNum()
-         {
-            int Num1, Num2, Num3;
-            Console.Write("Enter First Number: ");
-            Num1 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter Second Number: ");
-            Num2 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter Third Number: ");
-            Num3 = Convert.ToInt32(Console.ReadLine());
-            if (Num1 > Num2 && Num1 > Num3)
+        public void VowelConsonant()
+        {
+            char ch;
+            Console.WriteLine("Enter charactor");
+            ch = Convert.ToChar(Console.ReadLine());
+
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
             {
-                Console.WriteLine(Num1 + " is the largest");
-            }
-            else if (Num2 > Num3)
-            {
-                Console.WriteLine(Num2 + " is the largest");
+                Console.WriteLine(ch + " is Vowel.");
             }
             else
             {
-                Console.WriteLine(Num3 + " is the largest");
+                Console.WriteLine(ch + " is Consonant.");
             }
-
-         }
+        }
     }
 }
