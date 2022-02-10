@@ -8,20 +8,17 @@ namespace BasicCoreProgram
 {
     internal class BasicCoreProgram
     {
-        public void QuotientAndRemainder()
+        public void PowerOf2()
         {
-
-            int quotient = 0;
-            int remainder = 0;
-            int dividend = 0;
-            int divisor = 0;
-            Console.WriteLine("Enter Dividend: ");
-            dividend = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter Divisor: ");
-            divisor = Convert.ToInt32(Console.ReadLine());
-            quotient = dividend / divisor;
-            remainder = dividend % divisor;
-            Console.WriteLine("Quotient: " + quotient + " Remainder: " + remainder);
-        }   
+            Console.WriteLine("Enter the value of power");
+            int power = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Table of power of two");
+            int num = 2, ans = 1;
+            for (int i = 1; i <= power; i++)
+            {
+                ans = ans * num;
+                Console.WriteLine(ans);
+            }
+        }
     }
 }

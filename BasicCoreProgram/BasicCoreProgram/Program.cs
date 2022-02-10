@@ -18,7 +18,8 @@ namespace BasicCoreProgram
             //program.HarmonicNumber();
             //program.LargestNum();
             //program.VowelConsonant();
-            program.QuotientAndRemainder();
+            //program.QuotientAndRemainder();
+            program.PowerOf2();
             Console.ReadLine();
         }
     }
