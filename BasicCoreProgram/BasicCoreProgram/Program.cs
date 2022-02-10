@@ -20,7 +20,8 @@ namespace BasicCoreProgram
             //program.VowelConsonant();
             //program.QuotientAndRemainder();
             //program.PowerOf2();
-            program.Factorization(36);
+            //program.Factorization(36);
+            program.SwapingOfNumbers();
             Console.ReadLine();
         }
     }

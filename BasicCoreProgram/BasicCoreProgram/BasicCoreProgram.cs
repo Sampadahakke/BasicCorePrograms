@@ -8,28 +8,19 @@ namespace BasicCoreProgram
 {
     internal class BasicCoreProgram
     {
-        public void Factorization(int num)
+        public void SwapingOfNumbers()
         {
-            Console.WriteLine("Enter the number");
-            for (int i = 2; i <= num; i++)
-            {
-                if (num % i == 0)
-                {
-                    int isprime = 1;
-                    for (int j = 2; j <= i / 2; j++)
-                    {
-                        if (i % j == 0)
-                        {
-                            isprime = 0;
-                            break;
-                        }
-                    }
-                    if (isprime == 1)
-                    {
-                        Console.WriteLine(i);
-                    }
-                }
-            }
+            int a, b;
+            Console.WriteLine("Enter the value of a");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter the value of b");
+            b = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Before swap a= " + a + " b= " + b);
+            a = a * b;
+            b = a / b;
+            a = a / b;
+            Console.Write("After swap a= " + a + " b= " + b);
         }
     }
 }
