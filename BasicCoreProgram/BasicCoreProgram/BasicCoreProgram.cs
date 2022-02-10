@@ -8,20 +8,28 @@ namespace BasicCoreProgram
 {
     internal class BasicCoreProgram
     {
-        public void EvenOdd()
-        {
-            Console.WriteLine("Enter the positive integer number");
-            int Number = Convert.ToInt32(Console.ReadLine());
-            int reminder = Number % 2;
-            if (reminder == 0)
+         public void  LargestNum()
+         {
+            int Num1, Num2, Num3;
+            Console.Write("Enter First Number: ");
+            Num1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter Second Number: ");
+            Num2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter Third Number: ");
+            Num3 = Convert.ToInt32(Console.ReadLine());
+            if (Num1 > Num2 && Num1 > Num3)
             {
-                Console.WriteLine("The Number Is Even");
+                Console.WriteLine(Num1 + " is the largest");
+            }
+            else if (Num2 > Num3)
+            {
+                Console.WriteLine(Num2 + " is the largest");
             }
             else
             {
-                Console.WriteLine("The Number Is Odd");
+                Console.WriteLine(Num3 + " is the largest");
             }
 
-        }
+         }
     }
 }

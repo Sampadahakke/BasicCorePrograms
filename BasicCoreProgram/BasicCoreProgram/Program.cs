@@ -16,7 +16,7 @@ namespace BasicCoreProgram
             //program.CheckLeapYear();
             //program.Powertwo();
             //program.HarmonicNumber();
-            program.EvenOdd();
+            program.LargestNum();
             Console.ReadLine();
         }
     }
