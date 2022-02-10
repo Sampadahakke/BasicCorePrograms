@@ -15,7 +15,8 @@ namespace BasicCoreProgram
             //program.PercentageCheck();
             //program.CheckLeapYear();
             //program.Powertwo();
-            program.HarmonicNumber();
+            //program.HarmonicNumber();
+            program.EvenOdd();
             Console.ReadLine();
         }
     }

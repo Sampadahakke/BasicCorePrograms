@@ -8,16 +8,19 @@ namespace BasicCoreProgram
 {
     internal class BasicCoreProgram
     {
-        public void HarmonicNumber()
+        public void EvenOdd()
         {
-            Console.Write("Enter the number = ");
+            Console.WriteLine("Enter the positive integer number");
             int Number = Convert.ToInt32(Console.ReadLine());
-            double HarmonicNum = 0.0;
-            for (int i = 1; i <= Number; i++)
+            int reminder = Number % 2;
+            if (reminder == 0)
             {
-                HarmonicNum += (double) 1 / i;
+                Console.WriteLine("The Number Is Even");
             }
-            Console.WriteLine(Number + "th harmonic number = "+ HarmonicNum);
+            else
+            {
+                Console.WriteLine("The Number Is Odd");
+            }
 
         }
     }
