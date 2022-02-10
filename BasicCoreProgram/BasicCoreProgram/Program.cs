@@ -19,7 +19,8 @@ namespace BasicCoreProgram
             //program.LargestNum();
             //program.VowelConsonant();
             //program.QuotientAndRemainder();
-            program.PowerOf2();
+            //program.PowerOf2();
+            program.Factorization(36);
             Console.ReadLine();
         }
     }

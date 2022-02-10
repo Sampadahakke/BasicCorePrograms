@@ -8,16 +8,27 @@ namespace BasicCoreProgram
 {
     internal class BasicCoreProgram
     {
-        public void PowerOf2()
+        public void Factorization(int num)
         {
-            Console.WriteLine("Enter the value of power");
-            int power = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Table of power of two");
-            int num = 2, ans = 1;
-            for (int i = 1; i <= power; i++)
+            Console.WriteLine("Enter the number");
+            for (int i = 2; i <= num; i++)
             {
-                ans = ans * num;
-                Console.WriteLine(ans);
+                if (num % i == 0)
+                {
+                    int isprime = 1;
+                    for (int j = 2; j <= i / 2; j++)
+                    {
+                        if (i % j == 0)
+                        {
+                            isprime = 0;
+                            break;
+                        }
+                    }
+                    if (isprime == 1)
+                    {
+                        Console.WriteLine(i);
+                    }
+                }
             }
         }
     }
