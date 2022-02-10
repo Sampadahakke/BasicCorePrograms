@@ -8,26 +8,17 @@ namespace BasicCoreProgram
 {
     internal class BasicCoreProgram
     {
-        public int reminder1 = 0;
-        public int reminder2 = 0;
-        public void CheckLeapYear()
+        public void HarmonicNumber()
         {
-            Console.Write("Please Enter The Four Digit Number =");
-            int Year = Convert.ToInt32(Console.ReadLine());
-            reminder1 = Year % 4;
-            reminder2 = Year % 400;
-            if (reminder1 == 0)
+            Console.Write("Enter the number = ");
+            int Number = Convert.ToInt32(Console.ReadLine());
+            double HarmonicNum = 0.0;
+            for (int i = 1; i <= Number; i++)
             {
-                Console.WriteLine("This is leap year");
+                HarmonicNum += (double) 1 / i;
             }
-            else if (reminder2 == 0)
-            {
-                Console.WriteLine("This is leap year");
-            }
-            else
-            {
-                Console.WriteLine("This is not a leap year");
-            }
+            Console.WriteLine(Number + "th harmonic number = "+ HarmonicNum);
+
         }
     }
 }

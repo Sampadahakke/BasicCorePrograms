@@ -13,7 +13,9 @@ namespace BasicCoreProgram
             Console.WriteLine("================Welcome to Basic Core Program====================");
             BasicCoreProgram program = new BasicCoreProgram();
             //program.PercentageCheck();
-            program.CheckLeapYear();
+            //program.CheckLeapYear();
+            //program.Powertwo();
+            program.HarmonicNumber();
             Console.ReadLine();
         }
     }
